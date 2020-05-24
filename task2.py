@@ -84,7 +84,7 @@ def seconds_to_age(seconds: int) -> str:
         age += f"{weeks}w"
     if weeks or days:
         age += f"{days}d "
-    age += f"{hours}:{minutes}:{seconds}"
+    age += f"{hours:02}:{minutes:02}:{seconds:02}"
     return age
 
 
